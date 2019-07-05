@@ -41,3 +41,12 @@ repos:
         entry: docker-compose-config
         files: docker-compose
         types: [ yaml ]
+      - id: dockerfile-lint
+        name: dockerfile-lint
+        description: A rule based 'linter' for Dockerfiles
+        minimum_pre_commit_version: '0.18.0'
+        language: docker_image
+        entry: projectatomic/dockerfile-lint dockerfile_lint
+        args: [ '-f' ]
+        types: [ dockerfile ]
+        require_serial: true

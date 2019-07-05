@@ -7,6 +7,15 @@
   language: docker_image
   entry: adarnimrod/docker-pre-commit hadolint
   types: [ dockerfile ]
+- id: dockerfile-lint
+  name: dockerfile-lint
+  description: A rule based 'linter' for Dockerfiles
+  minimum_pre_commit_version: '0.18.0'
+  language: docker_image
+  entry: projectatomic/dockerfile-lint dockerfile_lint
+  args: [ '-f' ]
+  types: [ dockerfile ]
+  require_serial: true
 - id: docker-compose
   name: docker-compose config
   description: Validate the Docker Compose file using docker-compose config
