@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+
+for filename in "$@"
+do
+    docker-compose --file "$filename" config || failed=1
+done
+[ "${failed:-0}" -eq '0' ]
