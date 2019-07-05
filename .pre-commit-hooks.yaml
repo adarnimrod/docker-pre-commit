@@ -1,0 +1,17 @@
+# vim:ff=unix ts=2 sw=2 ai expandtab
+---
+- id: hadolint
+  name: Hadolint Dockerfile linter
+  description: Dockerfile linter, validate inline bash, written in Haskell
+  minimum_pre_commit_version: '0.18.0'
+  language: docker_image
+  entry: adarnimrod/docker-pre-commit hadolint
+  files: Dockerfile
+- id: docker-compose
+  name: docker-compose config
+  description: Validate the docker-compose file
+  minimum_pre_commit_version: '0.18.0'
+  language: docker_image
+  entry: adarnimrod/docker-pre-commit docker-compose-config
+  files: docker-compose
+  types: [ yaml ]
