@@ -6,7 +6,7 @@
   minimum_pre_commit_version: '0.18.0'
   language: docker_image
   entry: adarnimrod/docker-pre-commit hadolint
-  type: [ dockerfile ]
+  types: [ dockerfile ]
 - id: docker-compose
   name: docker-compose config
   description: Validate the Docker Compose file using docker-compose config
