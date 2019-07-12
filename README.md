@@ -18,7 +18,7 @@
 
 ```yaml
 - repo: https://www.shore.co.il/git/docker-pre-commit
-  rev: v0.2.0
+  rev: v0.3.0
   hooks:
     - id: hadolint
     - id: docker-compose
