@@ -1,4 +1,4 @@
 #!/bin/sh
 set -eu
 
-echo "$@" | xargs -rtn1 dockerfile_lint --dockerfile
+echo "$@" | xargs -rn1 dockerfile_lint --dockerfile
