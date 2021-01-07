@@ -17,5 +17,3 @@ RUN apk add --update --no-cache --repository http://dl-cdn.alpinelinux.org/alpin
     hadolint --version
 COPY docker-compose-config dockerfile-lint /usr/local/bin/
 USER nobody
-LABEL Name docker-pre-commit
-LABEL Version 0.3.0
