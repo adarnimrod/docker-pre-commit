@@ -12,9 +12,6 @@ stages:
   - build
   - deploy
 
-variables:
-  IMAGE: docker-pre-commit
-
 build:
   extends: .docker-build-shore
   tags: [ns4.shore.co.il]
