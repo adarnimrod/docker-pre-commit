@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM registry.hub.docker.com/library/alpine:3.13
 # hadolint ignore=DL3016,DL3018
 RUN apk add --update --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
         docker-compose \
