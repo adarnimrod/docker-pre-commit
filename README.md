@@ -1,5 +1,9 @@
 # Docker pre-commmit
 
+**This project has been discontinued and has been replaced by
+[pre-commit-hooks](https://git.shore.co.il/nimrod/pre-commit-hooks) and
+[hadolint-py](https://github.com/AleksaC/hadolint-py).**
+
 [![pipeline status](https://git.shore.co.il/nimrod/docker-pre-commit/badges/master/pipeline.svg)](https://git.shore.co.il/nimrod/docker-pre-commit/-/commits/master)
 
 > Pre-commit hooks for Docker and docker-compose.
